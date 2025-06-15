@@ -3,204 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Amit Kumar - Cardiologist & Hospital Director</title>
+    <title>Modern Healthcare Hospital</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
-    <script>
-        function initMap() {
-            const location = { lat: 19.0760, lng: 72.8777 }; // Mumbai coordinates
-            const map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: location
-            });
-            const marker = new google.maps.Marker({
-                position: location,
-                map: map,
-                title: 'HeartCare Clinic'
-            });
-        }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="header" >
-        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200" alt="Dr. Amit Kumar" class="profile-pic">
-        <h1>Dr. Amit Kumar</h1>
-        <p>MBBS, MD - Cardiology</p>
-        
-    </div>
-    <div class="section">
-        <a href="#appointment" class="appointment-btn">Book Appointment</a>
-        
-    </div>
+    <header>
+        <nav>
+            <div class="logo">Modern Healthcare</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#appointment">Appointment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="section">
-        <h2>Services Provided</h2>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Comprehensive Healthcare Solutions</h1>
+            <p>Your trusted partner in healthcare excellence</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
         <div class="services-grid">
             <div class="service-card">
-                <img src="./Cardiac_Treatments.png" alt="Cardiac Treatments" class="service-image">
-                <div class="service-content">
-                    <h3>Cardiac Treatments</h3>
-                    <ul>
-                        <li>Angioplasty and Stent Placement</li>
-                        <li>Heart Valve Repair</li>
-                        <li>Cardiac Catheterization</li>
-                        <li>Heart Failure Management</li>
-                    </ul>
-                </div>
+                <i class="fas fa-heartbeat"></i>
+                <!-- <h3>Surgery</h3> -->
+                <img src="./Surgry.png" alt="" class="image">
+                <p>Advanced surgical procedures with expert surgeons</p>
             </div>
             <div class="service-card">
-                <img src="./Cardiac_Surgeries.png" alt="Cardiac Surgeries" class="service-image">
-                <div class="service-content">
-                    <h3>Surgeries</h3>
-                    <ul>
-                        <li>Coronary Artery Bypass Grafting (CABG)</li>
-                        <li>Heart Valve Replacement</li>
-                        <li>Atrial Fibrillation Surgery</li>
-                        <li>Minimally Invasive Heart Surgery</li>
-                    </ul>
-                </div>
+                <i class="fas fa-heartbeat"></i>
+                <!-- <i class="fas fa-kidney"></i> -->
+                <!-- <h3>Dialysis</h3> -->
+                <img src="./Dylasis.png" alt="" class="image">
+                <p>State-of-the-art dialysis center</p>
             </div>
             <div class="service-card">
-                <img src="./Cardiac_Dialysis_Services.png" alt="Dialysis Services" class="service-image">
-                <div class="service-content">
-                    <h3>Dialysis Services</h3>
-                    <ul>
-                        <li>Hemodialysis</li>
-                        <li>Peritoneal Dialysis</li>
-                        <li>Dialysis Access Management</li>
-                        <li>Pre-Dialysis Care</li>
-                    </ul>
+                <i class="fas fa-prescription-bottle"></i>
+                <!-- <h3>Medical Store</h3> -->
+                <img src="./Medical.png" alt="" class="image">
+                <p>24/7 medical supplies and medications</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-user-md"></i>
+                <!-- <h3>Doctor Appointments</h3> -->
+                <img src="./appointment.png" alt="" class="image">
+                <p>Book appointments with specialists</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-hospital-user"></i>
+                <!-- <h3>Bed Reservation</h3> -->
+                <img src="./reservation.png" alt="" class="image">
+                <p>Secure your hospital bed</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tests" class="tests">
+        <h2>Available Medical Tests</h2>
+        <div class="tests-container">
+            <div class="test-category">
+                <!-- <h3>Pathology Tests</h3> -->
+                <img src="./Pathology.png" alt="" class="image">
+                <ul>
+                    <li>Blood Tests (CBC, CBC with Diff)</li>
+                    <li>Urinalysis</li>
+                    <li>Liver Function Test</li>
+                    <li>Kidney Function Test</li>
+                    <li>Lipid Profile</li>
+                    <li>Sugar Tests (Fasting, Postprandial, HbA1c)</li>
+                </ul>
+            </div>
+            <div class="test-category">
+                <!-- <h3>Imaging Tests</h3> -->
+                <img src="./imagine.png" alt="" class="image">
+                <ul>
+                    <li>Ultrasound (Abdomen, Pelvis, etc.)</li>
+                    <li>X-Ray (All parts)</li>
+                    <li>CT Scan</li>
+                    <li>MRI</li>
+                    <li>Doppler Studies</li>
+                </ul>
+            </div>
+            <div class="test-category">
+                <!-- <h3>Special Tests</h3> -->
+                <img src="./special test.png" alt="" class="image">
+                <ul>
+                    <li>ECG</li>
+                    <li>Echocardiography</li>
+                    <li>Colonoscopy</li>
+                    <li>Gastroscopy</li>
+                    <li>Stress Test</li>
+                    <li>Bone Density Scan</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="ambulance" class="ambulance">
+        <h2>Emergency Ambulance Services</h2>
+        <div class="ambulance-content">
+            <div class="ambulance-info">
+                <h3>24/7 Emergency Response</h3>
+                <p>Our state-of-the-art ambulances are equipped with:</p>
+                <ul>
+                    <li>Oxygen Supply</li>
+                    <li>Defibrillator</li>
+                    <li>ECG Monitor</li>
+                    <li>Ventilator</li>
+                    <li>Basic Life Support Equipment</li>
+                    <li>Trained Medical Staff</li>
+                </ul>
+            </div>
+            <div class="ambulance-contact">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>Emergency: +1 234 567 8900</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>Non-Emergency: +1 234 567 8901</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <p>24/7 Service Available</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section professional-background">
-        <div class="background-image" style="background-image: url('./Professional_Excellence_Cardiology.png')">
-            <div class="overlay"></div>
-            <div class="background-content">
-                <h2>Professional Excellence in Cardiology</h2>
-                <p>Dr. Amit Kumar brings his extensive experience and expertise to every consultation. With a focus on patient-centered care and cutting-edge medical practices, he provides comprehensive cardiac solutions for all your heart health needs.</p>
+    <section id="stats" class="stats">
+        <h2>Hospital Statistics</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fas fa-bed"></i>
+                <h3>250+</h3>
+                <p>Total Beds</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-user-injured"></i>
+                <h3>10,000+</h3>
+                <p>Patients Treated</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <h3>150+</h3>
+                <p>Medical Staff</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-award"></i>
+                <h3>50+</h3>
+                <p>Years of Experience</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <h2>Availability</h2>
-        <div class="contact-info">
-            <div class="contact-card">
-                <h3>HeartCare Clinic</h3>
-                <p>123, Dr. Ambedkar Road, Bandra West, Mumbai - 400050</p>
-                <p>Phone: +91 98765 43210</p>
-                <p>Timing: Monday to Saturday - 9:00 AM to 2:00 PM</p>
-                <div id="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.9048975703117!2d80.23556927596105!3d26.491006778085044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c370029c7f087%3A0xb4dedd1f75f46b14!2sRooys%20Soft%20Tech!5e0!3m2!1sen!2sin!4v1749901727824!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+    <section id="equipment" class="equipment">
+        <h2>Medical Equipment</h2>
+        <div class="equipment-grid">
+            <div class="equipment-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Advanced Surgical Suite</h3>
+                <ul>
+                    <li>Laparoscopic Equipment</li>
+                    <li>Robotic Surgery Systems</li>
+                    <li>High-Definition Operating Room Cameras</li>
+                </ul>
             </div>
-
-            <div class="contact-card">
-                <h3>Apollo Hospitals</h3>
-                <p>Plot No. 14, Sector 2, Vashi, Navi Mumbai - 400703</p>
-                <p>Phone: +91 22 2525 2525</p>
-                <p>Timing: Monday to Friday - 4:00 PM to 8:00 PM</p>
-                <div id="map2">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.9048975703117!2d80.23556927596105!3d26.491006778085044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c370029c7f087%3A0xb4dedd1f75f46b14!2sRooys%20Soft%20Tech!5e0!3m2!1sen!2sin!4v1749901727824!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            <div class="equipment-card">
+                <i class="fas fa-brain"></i>
+                <h3>Imaging Equipment</h3>
+                <ul>
+                    <li>3T MRI Scanner</li>
+                    <li>64-Slice CT Scanner</li>
+                    <li>Digital X-Ray</li>
+                    <li>Ultrasound Machines</li>
+                </ul>
             </div>
-        </div>
-    </div>
-
-
-
-    <div class="section">
-        <h2>Professional Experience</h2>
-        <div class="experience-item current">
-            <h3>Hospital Director & Chief Consultant</h3>
-            <p class="hospital-name">Apollo Hospitals, Mumbai</p>
-            <p class="duration">2023 - Present</p>
-            <ul>
-                <li>Leading a team of 50+ medical professionals</li>
-                <li>Implementing advanced cardiac care protocols</li>
-                <li>Providing expert cardiological consultation</li>
-                <li>Managing hospital operations and patient care</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <h3>Senior Consultant - Cardiology</h3>
-            <p class="hospital-name">Fortis Hospital, Navi Mumbai</p>
-            <p class="duration">2018 - 2023</p>
-            <ul>
-                <li>Managed complex cardiac cases</li>
-                <li>Trained junior cardiologists</li>
-                <li>Conducted cardiac research</li>
-                <li>Implemented new treatment protocols</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <h3>Medical Officer - Cardiology</h3>
-            <p class="hospital-name">Seth Gordhandas Sunderdas Medical College, Mumbai</p>
-            <p class="duration">2014 - 2018</p>
-            <ul>
-                <li>Provided quality cardiac care</li>
-                <li>Assisted in cardiac procedures</li>
-                <li>Participated in emergency cardiac care</li>
-                <li>Conducted medical rounds</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Current Practice</h2>
-        <div class="contact-info">
-            <div class="contact-card">
-                <h3>HeartCare Clinic</h3>
-                <p>123, Dr. Ambedkar Road, Bandra West, Mumbai - 400050</p>
-                <p>Phone: +91 98765 43210</p>
-                <p>Timing: Monday to Saturday - 9:00 AM to 2:00 PM</p>
+            <div class="equipment-card">
+                <i class="fas fa-heart"></i>
+                <h3>Cardiology Equipment</h3>
+                <ul>
+                    <li>EKG Machines</li>
+                    <li>Cardiac Monitors</li>
+                    <li>Echocardiography Systems</li>
+                </ul>
             </div>
-
-            <div class="contact-card">
-                <h3>Apollo Hospitals</h3>
-                <p>Plot No. 14, Sector 2, Vashi, Navi Mumbai - 400703</p>
-                <p>Phone: +91 22 2525 2525</p>
-                <p>Timing: Monday to Friday - 4:00 PM to 8:00 PM</p>
+            <div class="equipment-card">
+                <i class="fas fa-flask"></i>
+                <h3>Laboratory Equipment</h3>
+                <ul>
+                    <li>Automated Blood Analyzers</li>
+                    <li>Microscopes</li>
+                    <li>Centrifuges</li>
+                    <li>Incubators</li>
+                </ul>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <h2>Areas of Expertise</h2>
-        <ul>
-            <li>Interventional Cardiology</li>
-            <li>Electrophysiology</li>
-            <li>Cardiac Imaging</li>
-            <li>Preventive Cardiology</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Professional Memberships</h2>
-        <ul>
-            <li>Member, Medical Council of India</li>
-            <li>Member, Indian College of Cardiology</li>
-            <li>Member, American College of Cardiology</li>
-            <li>Fellow, Indian Academy of Medical Sciences</li>
-        </ul>
-    </div>
-    <div class="section">
+    <section id="about" class="about">
         <h2>About Us</h2>
-        <p class="expertise">Dr. Amit Kumar is a highly accomplished cardiologist with over 15 years of dedicated experience in the field of cardiology. He specializes in advanced cardiac care and has established himself as a leading expert in interventional cardiology. With a proven track record of successful treatments and surgeries, Dr. Kumar has helped countless patients achieve better heart health.</p>
-        <div class="expertise-details">
-            <ul>
-                <li>MBBS from Seth Gordhandas Sunderdas Medical College</li>
-                <li>MD in Cardiology from Apollo Hospitals</li>
-                <li>Fellowship in Interventional Cardiology</li>
-                <li>Member of Indian College of Cardiology</li>
-                <li>Published numerous research papers in international journals</li>
-            </ul>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Modern Healthcare Hospital is dedicated to providing exceptional medical care and services to our community. With state-of-the-art facilities and experienced medical professionals, we strive to deliver compassionate and comprehensive healthcare solutions.</p>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Medical Street, Healthcare City, HC 12345</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+1 234 567 8900</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@modernhealthcare.com</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.9048975703117!2d80.23556927596105!3d26.491006778085044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c370029c7f087%3A0xb4dedd1f75f46b14!2sRooys%20Soft%20Tech!5e0!3m2!1sen!2sin!4v1749901727824!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Modern Healthcare Hospital</h3>
+                <p>Providing excellence in healthcare</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@modernhealthcare.com</p>
+                <p>Phone: +1 234 567 8900</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Modern Healthcare Hospital. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
